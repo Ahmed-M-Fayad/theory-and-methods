@@ -1,2 +1,10 @@
-# theory-and-methods
-A collection of foundational theories and practical methods from mathematics, statistics, computation, and optimization, aimed at building a deep understanding of core concepts and their real-world applications in fields like data science and machine learning.
+# Theory and Methods
+
+Welcome!
+
+This repository collects theoretical concepts and practical methods across various areas.  
+It aims to build a deeper understanding of core ideas and how they connect to real-world applications.
+
+Content will be added and expanded over time, following a clear and organized approach to learning and implementation.
+
+Stay tuned for updates and new explorations.
