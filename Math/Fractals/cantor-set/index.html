@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Cantor Set Visualizer</title>
+    <link rel="stylesheet" href="master.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.26.0/plotly.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Interactive Cantor Set Visualizer</h1>
+            <p>Explore the fascinating fractal geometry of the Cantor set</p>
+        </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label>Iterations</label>
+                <input type="range" id="iterationSlider" min="1" max="8" value="4">
+                <span id="iterationValue">4</span>
+            </div>
+            <div class="control-group">
+                <label>Animation Speed</label>
+                <input type="range" id="speedSlider" min="1" max="10" value="3">
+                <span id="speedValue">3</span>
+            </div>
+            <button id="playPause">▶ Play Animation</button>
+            <button id="reset">↻ Reset</button>
+        </div>
+        
+        <div class="plot-container main-plot">
+            <div id="mainPlot"></div>
+        </div>
+        
+        <div class="plots-container">
+            <div class="plot-container">
+                <div id="dimensionPlot"></div>
+            </div>
+            <div class="plot-container">
+                <div id="lengthPlot"></div>
+            </div>
+        </div>
+        
+        <div class="info-panel">
+            <div class="stat">
+                <div class="stat-value" id="segmentCount">0</div>
+                <div class="stat-label">Segments</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="totalLength">1.000</div>
+                <div class="stat-label">Total Length</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="fractalDim">0.631</div>
+                <div class="stat-label">Fractal Dimension</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="efficiency">100%</div>
+                <div class="stat-label">Space Efficiency</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
